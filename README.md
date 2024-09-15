@@ -56,15 +56,16 @@ Here we used 4x-Ultrasharp's upscaler to successfully increase the resolution of
 ![custom output image](/ouput_images/output_img4.png)
 
 ## Troubleshooting
-1. Missing nodes after loading the workflow
+
+### 1.  Missing nodes after loading the workflow
    -Use the ComfyUI Manager to download and install any missing nodes or modules.
    -Check the workflow file for dependencies or specific models(ControlNet, Van-Gogh-Diffusion, 4x-Upscaler) that need to be installed.
-2.  Output Image Quality is Poor or Inaccurate
+### 2.  Output Image Quality is Poor or Inaccurate
    -Double-check the positive and negative prompts to ensure they accurately describe the desired style. It is espacially important to add "lvngvnct," to beginning of the positive prompt as its referred at the model card.
    -Verify that output of Diffusion model is connected to 4x-Upscaler.
    -If you are receiving mostly yellow faces and mostly blue areas, add them to your negative prompt like referred at model card.
    -Ensure the seed, sampler, and scheduler parameters are set appropriately for the task.
-3.  Slow Processing Times
+### 3.  Slow Processing Times
    -Decrease the number of steps, reduce the batch size, or lower the resolution of input images.
    -Ensure your drivers (especially GPU drivers) are up-to-date.
    -Adjust the ControlNet workflow to reduce processing time.
