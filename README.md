@@ -55,7 +55,7 @@ Here we used 4x-Ultrasharp's upscaler to successfully increase the resolution of
 
 ![custom output image](/ouput_images/output_img4.png)
 
-## Troubleshooting
+## Troubleshooting for Potential Issues
 
 ### 1. Missing Nodes After Loading the Workflow
 - Use the [ComfyUI Manager](https://github.com/ltdrdata/ComfyUI-Manager) to download and install any missing nodes or modules.  
@@ -71,6 +71,7 @@ Here we used 4x-Ultrasharp's upscaler to successfully increase the resolution of
 - Decrease the number of steps, reduce the batch size, or lower the resolution of input images.  
 - Ensure your drivers (especially GPU drivers) are up-to-date.  
 - Adjust the ControlNet workflow to reduce processing time.
+- Ensure ComfyUI is properly installed and using the GPU if you have a GPU in your system.  
         
 
 
