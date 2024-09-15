@@ -35,15 +35,15 @@ To provide a clearer explanation of the workflow, it has been divided into three
 
 ### Section 1:
 
-![Custom Model Configuration](/a/workflow_img0.png)
+![Custom Model Configuration](/workflow_imgs/workflow_img0.png)
 Here we can select Custom Diffusion Models Hyperparameters. Also we can decide batch size and generated image resolution.
 
 ### Section 2: 
-![Custom Model Configuration](/a/workflow_img1.png)
+![Custom Model Configuration](/workflow_imgs/workflow_img1.png)
 Here we used T2I-Adapter's ControlNet models for consistent img2img style transfer all the parameters can be changed using ComfyUI. Here are the ones selected are Canny, Depth and Sketch but we can use segmentation or pose models too according to the user's requirements. Also added a module that handles image normalization and resizing. Normalization node is not connected anywhere since the results are better without using it.
 
 ### Section 3:
-![Custom Model Configuration](/a/workflow_img2.png)
+![Custom Model Configuration](/workflow_imgs/workflow_img2.png)
 Here we used 4x-Ultrasharp's upscaler to successfully increase the resolution of the generated image or enhace the images quality.
 
 ## Example Images
@@ -64,7 +64,7 @@ Here we used 4x-Ultrasharp's upscaler to successfully increase the resolution of
    -Verify that output of Diffusion model is connected to 4x-Upscaler.
    -If you are receiving mostly yellow faces and mostly blue areas, add them to your negative prompt like referred at model card.
    -Ensure the seed, sampler, and scheduler parameters are set appropriately for the task.
-4.  Slow Processing Times
+3.  Slow Processing Times
    -Decrease the number of steps, reduce the batch size, or lower the resolution of input images.
    -Ensure your drivers (especially GPU drivers) are up-to-date.
    -Adjust the ControlNet workflow to reduce processing time.
